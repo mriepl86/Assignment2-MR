@@ -1,0 +1,18 @@
+Schreibe ein Programm in der Programmiersprache Go. 
+Wende dabei das Prinzip "Composite Pattern" an. Das 
+Programm soll ausführbar sein, aber minimalistisch (Prototyp).
+Verwende ein Item-Interface mit Price() float64 und Display(). 
+Glass und Frame sind Blätter mit individuellen Preisen, Window 
+ist ein Composite mit mehreren Item-Elementen. Price() berechnet 
+rekursiv den Gesamtpreis. Display() gibt die Struktur baumförmig 
+mit Einrückungen (2 Leerzeichen pro Ebene), Elementnamen, 
+Einzelpreisen und Gesamtpreisen aus. Formatiere Preise in Euro 
+mit zwei Nachkommastellen (%.2f €). Verwende Pointer auf Structs
+ (*Window, *Glass, *Frame) und speichere die Elemente im Composite
+  über []Item als Referenzen, ohne Struct-Werte zu kopieren. 
+  Faktorisiere gemeinsame Logik aus und demonstriere die Funktionalität
+   in main(). Halte den Code einfach und idiomatisch. füge an geeigneten
+    stellen im code erklärende kommentare hinzu. Befülle das Programm 
+    mit passenden Demo-Daten für Window, Glass und Frame.
+
+
